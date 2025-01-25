@@ -21,12 +21,20 @@ We highly recommend you use Conda for package management.
   python main.py -data test_data -gpu 1 -name test_model -epoch 500
 ```
 
-## Target-based drug Prediction:
-1)Create a test file named "ad_pre.txt" and move the file to the folder "test_data".
+## Transudative prediction: identifying known drug-drug-disease:
+1)Create a test file named "test_transudative.txt" and move the file to the folder "test_data".
 
 2)Run the following command, predicting results will be saved in the file "pre_results.txt".
 ```python
-  python test.py -data test_data -gpu 1 -name test_model -save_result pre_results.txt -test_file ad_pre.txt
+  python test_transductive.py -data test_data -gpu 1 -name test_data -save_result results_transudative.txt -disease_list disease_list.txt -combination_ids test_transudative.txt
+```
+
+## Inductive prediction: identifying novel drug-drug-disease triples:
+1)Create a test file named "test_inductive.txt" and move the file to the folder "test_data".
+
+2)Run the following command, predicting results will be saved in the file "pre_results.txt".
+```python
+  python test_inductive.py.py -data test_data -gpu 1 -name test_data -save_result results_inductive.txt -disease_list disease_list.txt -combination_ids test_inductive.txt
 ```
 
 ### Parameter Note:
@@ -43,12 +51,3 @@ We highly recommend you use Conda for package management.
 
 -test_file : the name of testing file
 
-
-# The ranking of potential drug candidates for diabetes cataract
-
-In the 'DrugRank' folder, We list the top 1000 drug candidates repurposed for potentially reducing the risk of cataract extraction in patients with diabetes mellitus.
-
-# Reference
-[1] Zhenxiang Gao, Maria Gorenflo, David Kaelber, Vincent Monnier and Rong Xu. “Drug repurposing for reducing the risk of cataract extraction in patients with diabetes mellitus: integration of artificial intelligence-based drug prediction and clinical corroboration.” Frontiers in Pharmacology, 14, 1181711, 2023.
-
-[2] Zhenxiang Gao, Pingjian Ding, Rong Xu. “KG-Predict: A knowledge graph computational framework for drug repurposing.” Journal of Biomedical Informatics, 132, 104133, 2022.
