@@ -4,10 +4,10 @@
 
 ## Requirements:
 Python(version >= 3.6) \
-pytorch(version>=1.4.0)
-ordered_set(version>=3.1)
-numpy(version>=1.16.2)
-torch_scatter(version>=2.0.4)
+pytorch(version>=1.4.0) \
+ordered_set(version>=3.1) \
+numpy(version>=1.16.2) \
+torch_scatter(version>=2.0.4) \
 scikit_learn(version>=0.21.1)
 
 We highly recommend you use Conda for package management.
