@@ -1,22 +1,6 @@
-# CAT-DRKB
-## Comprehensive Cataract Drug Repositioning Framework
+# DualKG-DC
+## A Dual-Layer Knowledge Graph Framework for Drug Combination Prediction
 
-This comprehensive framework integrates a detailed knowledge base with advanced artificial intelligence (AI) models to facilitate the identification and validation of potential therapeutic candidates.
-
-<img src="https://github.com/zhenxianggao/CAT-DRKB/blob/main/Image/Drug%20repurposing%20framework.jpg" width="650" height="420">
-
-
-# The biological knowledge graph construction
-
-In the 'KowledgeGraph' folder, we constructed a biological knowledge graph by extracting multiple types of interactions between drugs, genes, diseases, and phenotypic annotations from various public biomedical datasets that offered high-quality structured information. Six types of phenome-level associations were collected from Gene Ontology Annotation (GOA), Genotype-Tissue Expression (GTEx), Mouse Genome Informatics (MGI), and Phenomebrowser databases. We also obtained two types of genome-level associations from MGI and DrugBank. In our
-previous study, we constructed TreatKB, which included drug-disease treatment relationships mined by NLP techniques from records of patients in the FDA Adverse Event Reporting System (FAERS), FDA drug labels, MEDLINE abstracts, and clinical trial studies.
-
-The biological knowledge graph contained 72,360 nodes, 1,313,075 edges, seven node types, and nine semantic relationships. 
-
-<img src="https://github.com/zhenxianggao/CAT-DRKB/blob/main/Image/Knowledge%20graph%20data%20source.jpg" width="650" height="390">
-
-
-# The AI-baed drug disovery model (KG-Predict)
 
 ## Requirements:
 Python(version >= 3.6)
