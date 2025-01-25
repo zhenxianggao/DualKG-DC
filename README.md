@@ -47,7 +47,9 @@ We highly recommend you use Conda for package management.
 
 -epoch : the number of epochs
 
+-disease_list ： the name of disease file
+
 -save_result : the filename that is used to store test results
 
--test_file : the name of testing file
+-combination_ids : the name of testing file
 
