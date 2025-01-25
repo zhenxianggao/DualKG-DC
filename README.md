@@ -26,7 +26,7 @@ We highly recommend you use Conda for package management.
 
 2)Run the following command, predicting results will be saved in the file "pre_results.txt".
 ```python
-  python test_transductive.py -data test_data -gpu 1 -name test_data -save_result results_transudative.txt -disease_list disease_list.txt -combination_ids test_transudative.txt
+  python test_transductive.py -data test_data -gpu 1 -name test_data -save_result results_transudative.txt -combination_test test.txt
 ```
 
 ## Inductive prediction: identifying novel drug-drug-disease triples:
@@ -34,7 +34,7 @@ We highly recommend you use Conda for package management.
 
 2)Run the following command, predicting results will be saved in the file "pre_results.txt".
 ```python
-  python test_inductive.py.py -data test_data -gpu 1 -name test_data -save_result results_inductive.txt -disease_list disease_list.txt -combination_ids test_inductive.txt
+  python test_inductive.py.py -data test_data -gpu 1 -name test_data -save_result results_inductive.txt -combination_test test_inductive.txt
 ```
 
 ### Parameter Note:
@@ -47,9 +47,7 @@ We highly recommend you use Conda for package management.
 
 -epoch : the number of epochs
 
--disease_list ： the name of disease file
+-combination_test : the name of testing file
 
 -save_result : the filename that is used to store test results
-
--combination_ids : the name of testing file
 
