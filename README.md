@@ -3,7 +3,7 @@
 
 
 ## Requirements:
-Python(version >= 3.6)
+Python(version >= 3.6) \\
 pytorch(version>=1.4.0)
 ordered_set(version>=3.1)
 numpy(version>=1.16.2)
